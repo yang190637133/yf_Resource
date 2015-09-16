@@ -1,0 +1,8 @@
+﻿<h1>RRR数据库</h1>
+<div class="content">
+<p>数据库类型:db2</p>
+<p>数据库名称:ys</p>
+<p>ip：*********</p>
+<p>user：*********</p>
+<p>password：*********</p>
+</div>

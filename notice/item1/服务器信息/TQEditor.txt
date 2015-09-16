@@ -1,0 +1,39 @@
+﻿<h1>测试服务器1</h1>
+<div class="content">
+<p style="margin-right: 0px;" dir="ltr"><font color="#0000ff"><strong>&nbsp;&nbsp;&nbsp;&nbsp; TQEditor特点</strong>：
+</font>
+</p>
+<ol>
+<li>小身材,JS(72k)+CSS(12k)+图标(19k) 总计71K, <font color="#ff3300">启用gz压缩后不到50K</font></li>
+<li>全浏览器支持, 当前支持 IE6, 7, 8, 9, chrome 8+, FF 3+, Opera 10+, Safari5+</li>
+<li>Word代码清理,有效清理从word中粘贴的代码同时保留格式</li>
+<li>默认使用SWFUpload组件处理上传, 用户体验超好</li>
+<li>自带源码格式化 </li>
+<li>支持皮肤功能, 只需修改一个CSS即可自定义皮肤</li>
+<li>一键自动排版功能,内置自动图文排版, 默认即适合大多数的文章内容排版形式</li>
+<li>灵活的扩展功能, 方便按业务需要扩展功能</li>
+<li>可视化的UBB编辑功能 </li>
+<li>方便的事件,接口调用</li></ol>
+<table style="border-collapse:collapse;" width="96%" align="center" border="1" cellspace="0" cellpadding="3"><tbody>
+<tr><td valign="top" class="" style="background-color: rgb(255, 255, 51); "><br>
+</td><td valign="top" class="" style="background-color: rgb(153, 255, 255); ">列1</td><td valign="top" class="" style="background-color: rgb(153, 255, 255); ">列2</td><td valign="top" class="" style="background-color: rgb(153, 255, 255); ">列3</td><td valign="top" class="" style="background-color: rgb(153, 255, 255); ">列4</td></tr>
+<tr><td valign="top" class="" style="background-color: rgb(255, 255, 51); ">行1</td><td valign="top" class=""><br>
+</td><td valign="top" class="" rowspan="2" colspan="2"><b>你可以同时选择多个单元格<br>
+然后再点工具栏表格按钮看看.<br>
+你会发现以下内容:<br>
+TQEditor支持单元格合并,拆分.<br>
+设置单元格内容对齐方向<br>
+设置表格的常用属性</b></td><td valign="top" class=""><br>
+</td></tr>
+<tr><td valign="top" class="" style="background-color: rgb(255, 255, 51); ">行2</td><td valign="top" class=""><br>
+</td><td valign="top" class=""><br>
+</td></tr>
+<tr><td style="background-color: rgb(255, 255, 51); " class="">行3</td><td class="">&nbsp;</td><td class=""><b>选中单元格后, 点背景色按钮, 是设置单元格的背景色</b></td><td class=""><b>插入行/列,你会发现TQEditor智能处理已合并的格&nbsp;</b></td><td class="">&nbsp;</td></tr>
+<tr><td style="background-color: rgb(255, 255, 51); " class="">&nbsp;</td><td class="">&nbsp;</td><td class="">&nbsp;</td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr></tbody></table>
+<br>
+<hr>
+当前例子调用脚本代码：
+<div style="padding:5px; background: #f7f7f7; border:1px solid #717171; margin:5px;">
+<font color="#0000ff">new</font> TQEditor(<font color="#ff00cc">'content'</font>,{width:<font color="#ff00cc">'100%'</font>, resize:<font color="#ff00cc">'h'</font>, advToolbarMode:<font color="#0000ff">true</font>});
+</div>
+</div>

@@ -1,0 +1,30 @@
+﻿<h1>分页插件</h1>
+<div class="content">
+<p>demo</p>
+<p>页面导入jquery.jowtoPage.min.js 和 jowtoPage.js 这两个js</p>
+<p>----------------------------------------------------------------------------</p>
+<p>示例</p>
+<p>html或jsp页面需要有from 分页插件会根据操作自动提交from,例如：</p>
+<p>&lt;form action=url method="post"  id="formId"/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="hidden" id="currentPage" name="currentPage" value="${paging.currentPage}"/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="hidden" id="maxResults" name="maxResults" value="${paging.maxResults}"/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="hidden" id="typecode" name="typecode" value="${typecode}"/&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>----------------------------------------------------------------------------</p>
+<p>分页样式的位置,需要与下面js绑定的id一致，$(pageID)，例如放在表格或者列表等下方</p>
+<p>&lt;div id="pageID" class="container-fluid" style="float: right;"&gt;&lt;/div&gt;</p>
+<p>----------------------------------------------------------------------------</p>
+<p>javascript部分</p>
+<p>&lt;script type="text/javascript"&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;var currentPage = parseInt('${paging.currentPage}'); //当前页数</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;var maxResults = parseInt('${paging.maxResults}');//每页显示多少条</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;var totalResults = parseInt('${paging.totalResults}');//记录总数</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;$(pageID).jowtoPage(loaddiv,'formId',maxResults,currentPage,totalResults);</p>
+<p>&lt;/script&gt;</p>
+<p>API</p>
+<p>loaddiv 是异步加载显示内容的区域</p>
+<p>form 表单ID</p>
+<p>maxResults 每页显示多少条数</p>
+<p>currentPage 当前页数</p>
+<p>totalResults 总条数</p>
+</div>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/normalize.css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--[if lt ie 9]>
+    <script src="/javascripts/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        var path ='http://'+'<%= contextPath %>';
+    </script>
+    <script src="/javascripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/javascripts/jowto/jowto_nav.js"></script>
+  </head>
+  <body class="landing">
+
+    <div class="page-wrapper">
+
+        <!-- 头部导航 -->
+        <header id="header">
+            <nav id="nav" class="nav">
+                <ul class="header_item">
+                    <li id="menu_btn"></li>
+<!--                    <li>
+                        item2
+                    </li>
+                    <li>item3</li>
+                    <li>item4</li>-->
+                </ul>
+            </nav>
+            <div class="header_title"><%= title %></div>
+        </header>
+
+        <!-- 内容区域 -->
+        <section id="content" class="content">
+
+            <!-- 左边菜单 -->
+            <div class="menu">
+                <ul id="menu_nav">
+                    <li>
+                        服务器信息
+                        <ul>
+                            <li><a href="#item1">测试服务器1</a></li>
+                            <li><a href="#item2">测试服务器2</a></li>
+                            <li><a href="#item3">测试服务器3</a></li>
+                            <li><a href="#item4">测试服务器4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        数据脚本
+                        <ul>
+                            <li><a href="#item5">云锁数据库</a></li>
+                            <li><a href="#item6">XXX数据</a></li>
+                            <li><a href="#item7">OOO数据</a></li>
+                            <li><a href="#item8">RRR数据</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Repository API
+                        <ul>
+                            <li><a href="#item9">JdbcTemplate</a></li>
+                            <li><a href="#item10">分页插件</a></li>
+                            <li><a href="#item11">图标插件</a></li>
+                            <li><a href="#item12">时间框控件</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        测试一下
+                        <ul>
+                            <li><a href="#item13">测试一下</a></li>
+                            <li><a href="#item14">测试一下</a></li>
+                            <li><a href="#item15">测试一下</a></li>
+                            <li><a href="#item16">一个JS插件</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- 文章内容 -->
+            <div id="article" class="article">
+                <!--
+                 <div id="item1" class="item"></div>
+                 <div class="split"></div>
+                 <div id="item2" class="item"></div>
+                 <div class="split"></div>
+                 <div id="item3" class="item"></div>
+
+                 <div id="item4" class="item" style="background: #ae3946;"></div>
+                 <div id="item5" class="item" style="background: #ae593c;"></div>
+                 <div id="item6" class="item" style="background: #ae8a46;"></div>
+                 <div id="item7" class="item" style="background: #9bae51;"></div>
+                 <div id="item8" class="item" style="background: #69ae4a;"></div>
+                 <div id="item9" class="item" style="background: #49ae6e;"></div>
+                 <div id="item10" class="item" style="background: #4faead;"></div>
+                 <div id="item11" class="item" style="background: #4c6dae;"></div>
+                 <div id="item12" class="item" style="background: #3e48ae;"></div>
+                 <div id="item13" class="item" style="background: #1e72ae;"></div>
+                 <div id="item14" class="item" style="background: #09a4ae;"></div>
+                 <div id="item15" class="item" style="background: #ae0b07;"></div>
+                 <div id="item16" class="item" >
+
+             </div>-->
+
+            </div>
+
+        </section>
+
+        <!-- 底部 -->
+        <!--  <footer id="footer"></footer>-->
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+﻿<h1>遮罩层插件</h1>
+<div class="content">
+<p>页面引入 jowto-mask-layer.js</p>
+<p>demo</p>
+<p>------------------------------------------------------------------------</p>
+<p>添加遮罩层</p>
+<p>
+$(divId).jowtoLayer({</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z_index:999,</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opacity:'.7',</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:'#EF7416',</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback:function(){</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.dir('加载弹出层');</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+});
+</p>
+<p>
+$(divId).jowtoLayer({</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z_index:999,</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opacity:'.7',</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;context:{</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:'18%',</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:'40%',</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top:'125px',</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family:'microsoft yahei',</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;size:'16px',</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:'#fff',</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:jow_html</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback:function(){</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.dir('加载弹出层');</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>
+});
+</p>
+<p>
+z_index      遮罩层的层级</br>
+opacity      透明度</br>
+bgcolor      背景色</br>
+context      内容区域</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;width   内容区宽度</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;height  内容区高度</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;top     内容区离上边距的距离</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;family  字体</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;size    字体大小</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;color   字体颜色</br>
+       &nbsp;&nbsp;&nbsp;&nbsp;text    内容（可以是文本或html）</br>
+callback     加载遮罩层后的回调函数
+</p>
+<p>------------------------------------------------------------------------</p>
+<p>清除遮罩层</p>
+<p>
+(divId).jowtoLayer('clear',function(){</br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.dir('取消了');</br>
+});</br>
+$(divId).jowtoLayer('clear');
+</p>
+<p>function 是取消遮罩层的回调方法</p>
+</div>
